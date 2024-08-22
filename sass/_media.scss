@@ -1,0 +1,69 @@
+@media (max-width:1200px) {
+    .explore{
+        &__wrapper{
+            flex-direction: column-reverse;
+            align-items: center;
+
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .cards{
+        &__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+        }
+    }
+    .contact{
+        &__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width: 990px){
+    
+    .navbar{
+        ul{
+            display: none;
+        }
+    }
+    .tourism{
+      
+            &__desc:nth-child(2){
+                display: none;
+            }
+    }
+    .contact{
+        &__category{
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+        }
+        &__categories{
+            border: 1px solid #777e90;
+        }
+        .icon{
+            border-right: 1px solid #777e90;
+        }
+        .bottom{
+            border-bottom: 1px solid #777e90;
+        }
+
+    }
+}
+
+@media (max-width:400px)  {
+.carousel{
+    &__icon{
+        display: none;
+    }
+}
+.hero{
+    &__title{
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+}
